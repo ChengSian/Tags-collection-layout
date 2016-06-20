@@ -1,5 +1,7 @@
 # Tag-collection-layout
 
+![alt tag](https://github.com/Brusnikin/Tag-collection-layout/blob/master/tags%20collection%20layout.png)
+
 ```swift
 let titles = ["Freedom", "God", "Happiness", "Imagination", "Intelligence", "Other"]
 var buttons = [UIButton]()
