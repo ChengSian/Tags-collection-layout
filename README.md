@@ -10,11 +10,11 @@ func createButton(withTitle title: String) -> UIButton
 {
     let button = UIButton(type: .system)
     button.setTitle(title, for: .normal)
-    button.titleLabel?.font = UIFont.systemFont(ofSize: 15.0, weight: UIFontWeightRegular)
+    button.titleLabel?.font = UIFont.systemFont(ofSize: 15.0, weight: UIFont.Weight.regular)
     button.layer.borderWidth = 0.5
     button.layer.borderColor = UIColor.lightGray.cgColor
     
-    let size = button.titleLabel!.text!.size(attributes: [NSFontAttributeName : button.titleLabel!.font!])
+    let size = button.titleLabel!.text!.size(withAttributes: [NSAttributedStringKey.font : button.titleLabel!.font!])
     button.frame = CGRect(x: 0.0, y: 0.0, width: size.width + 10.0, height: size.height + 10.0)
     button.titleEdgeInsets = UIEdgeInsetsMake(0.0, 5.0, 0.0, 5.0)
     
